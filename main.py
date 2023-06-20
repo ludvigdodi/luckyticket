@@ -1,9 +1,8 @@
 print("\nЩасливий квиток!!!\n")
 ticket_num = input("Введіть шестизначне число: ")
-ticket_num_list = list(ticket_num)
 
 try:
-    list_of_numbers = [int(n) for n in ticket_num_list]
+    list_of_numbers = [int(n) for n in list(ticket_num)]
     def sum_of_digits(list_of_numbers):
         if len(list_of_numbers) == 6:
             a = (list_of_numbers[0]+list_of_numbers[1]+list_of_numbers[2])
